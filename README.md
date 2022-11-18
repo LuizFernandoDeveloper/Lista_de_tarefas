@@ -16,4 +16,4 @@
 ![pagina inicial lsita de tarefas](/readmeAssests/index.png)
 #
 
-# [Clack Aqui para ver o site](https://lista-de-tarefas-delta.vercel.app)
+# [Clique Aqui para ver o site](https://lista-de-tarefas-delta.vercel.app)
