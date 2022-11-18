@@ -5,8 +5,9 @@
 
 body {
     background-color: #273142;
-    width: 99vw;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 main{
@@ -15,10 +16,9 @@ main{
     height: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 2%;
     border-radius: 50px;
     min-width: 700px;
-    min-height: 900px;
 }
 
 .logo{
@@ -79,16 +79,21 @@ form button:active{
     transform: translateY(4px);
     box-shadow: 7px 6px 28px 1px rgba(255, 255, 255, 0.24);
 }
-
 .conteudo{
     width: 670px;
-    height: 500px;
+    height: 50%;
+    min-height: 20%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     overflow-y: auto;
 }
 
+@media only screen and (max-width: 1400px) {
+    .conteudo{ 
+        height: 30%;
+    }
+}
 .conteudo::-webkit-scrollbar{
     width: 24px;
     height: 400px;
@@ -111,7 +116,6 @@ form button:active{
     display: flex;
     height: 70px;
     align-content: space-between;
-    
 }
 
 .barra-conteudo div{
@@ -122,7 +126,6 @@ form button:active{
     font-size: 32px;
     color: white ;
     text-align: center;
-    
 }
 
 .barra-conteudo div span{

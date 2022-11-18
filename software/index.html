@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./styles-css/reset.css">
     <link rel="stylesheet" href="./styles-css/root.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;1,400&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;1,400&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Lista de Tarefas</title>
 </head>
 <body>
@@ -20,35 +20,20 @@
             <h1>Lista de Tarefas</h1>
         </div>
         <form >
-            <input type="text" placeholder="Digite sua Tarefa">
-            <button type="submit">Salvar Tarefa</button>
+            <input id="tarefa" type="text" placeholder="Digite sua Tarefa">
+            <button id="button" type="submit">Salvar Tarefa</button>
         </form>
         <div class="conteudo">
             <div class="barra-conteudo">
                 <div>
                     <span>lavar vazilia</span>
                 </div> 
-                <button type="submit">Terminar</button>
-            </div>
-            <div class="barra-conteudo">
-                <div>
-                    <span>lavar vazilia</span>
-                </div> 
-                <button type="submit">Terminar</button>
-            </div>
-            <div class="barra-conteudo">
-                <div>
-                    <span>lavar vazilia</span>
-                </div> 
-                <button type="submit">Terminar</button>
-            </div>
-            <div class="barra-conteudo">
-                <div>
-                    <span>lavar vazilia</span>
-                </div> 
-                <button type="submit">Terminar</button>
+                <button id="terminar">Terminar</button>
             </div>
         </div>
+        
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./java-script/main.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-# Aplicação web para gerencia Lista de Tarefas
+# Aplicação Web para gerencia Lista de Tarefas
 ### Licença vinculada ao repositório: 
 [![NPM](https://img.shields.io/github/license/LuizFernandoDeveloper/Lista_de_tarefas)](https://github.com/LuizFernandoDeveloper/Lista_de_tarefas/blob/main/LICENSE)
 #
