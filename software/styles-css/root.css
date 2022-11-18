@@ -86,7 +86,7 @@ form button:active{
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .conteudo::-webkit-scrollbar{
