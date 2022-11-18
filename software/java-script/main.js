@@ -1,11 +1,7 @@
 $(document).ready(function(){
-
-    $('#terminar').click(()=>{
-        
-        $('.barra-conteudo').remove();
-        
-    });
-
+    remover = function(element){
+        element.parentElement.remove();
+    }
     $('#button').click(function(e){
         e.preventDefault();
 
@@ -19,9 +15,11 @@ $(document).ready(function(){
                                 <div>
                                     <span>${tarefa}</span>
                                 </div>
-                                <button id="terminar">Terminar</button> 
+                                <button onclick="remover(this)">Terminar</button> 
                             </div>`);
         $(newLine).appendTo('.conteudo');
         $('#tarefa').val('');
+        idBtn ++;
     });
+
 });
