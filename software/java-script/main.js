@@ -1,7 +1,10 @@
 $(document).ready(function(){
-    remover = function(element){
-        element.parentElement.remove();
-    }
+    let idBtn = 0
+    $(document).on('click', '#terminar', function(){
+        let valor = $('#terminar').val()
+        let line = '#line' + valor;
+        $(line).remove();        
+    })
     $('#button').click(function(e){
         e.preventDefault();
 
@@ -9,13 +12,14 @@ $(document).ready(function(){
 
         if(tarefa == ''){
             alert('Digite uma Tarefa');
+            return;
         };
 
-        const newLine = $(`<div class="barra-conteudo">
+        const newLine = $(`<div id="line${idBtn}"class="barra-conteudo">
                                 <div>
                                     <span>${tarefa}</span>
                                 </div>
-                                <button onclick="remover(this)">Terminar</button> 
+                                <button id="terminar" onclick="remover(this)" value="${idBtn}">Terminar</button> 
                             </div>`);
         $(newLine).appendTo('.conteudo');
         $('#tarefa').val('');
